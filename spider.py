@@ -3,9 +3,9 @@ from link_finder import LinkFinder
 from web_crawler import *
 
 
-class Spider():
+class Spider:
 
-	# Class variables (shared among all instances)
+	# Class variables (shared amongst all instances)
 	project_name = ''
 	base_url = ''
 	domain_name = ''

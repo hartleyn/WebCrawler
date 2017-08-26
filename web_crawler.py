@@ -7,8 +7,6 @@ def create_project_dir(directory):
 		print('Creating project ' + directory)
 		os.makedirs(directory)
 
-create_project_dir('thenewboston')
-
 
 # Create queue and crawled files (if not created)
 def create_data_files(project_name, base_url):
@@ -25,8 +23,6 @@ def write_file(path, data):
 	file = open(path, 'w')
 	file.write(data)
 	file.close()
-
-create_data_files('thenewboston', 'https://thenewboston.com/')
 
 
 # Add data onto an existing file
