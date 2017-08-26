@@ -27,3 +27,21 @@ def write_file(path, data):
 	file.close()
 
 create_data_files('thenewboston', 'https://thenewboston.com/')
+
+
+# Add data onto an existing file
+def append_to_file(path, data):
+	with open(path, 'a') as file:
+		file.write(data + '\n')
+
+
+# Delete the contents of a file
+def delete_file_contents(path):
+	with open(path, 'w'):
+		# do nothing
+		pass
+
+
+
+
+
